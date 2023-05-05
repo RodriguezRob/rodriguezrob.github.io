@@ -122,7 +122,6 @@ h1{
     .centerChunk {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
-      grid-gap: 1rem;
       width: 736px;
       margin: 0 auto;
     }
@@ -133,7 +132,6 @@ h1{
     .centerChunk {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1rem;
       width: 480px;
       margin: 0 auto;
     }
@@ -144,7 +142,6 @@ h1{
     .centerChunk {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-gap: 1rem;
       width: 100%;
       margin: 0;
     }
