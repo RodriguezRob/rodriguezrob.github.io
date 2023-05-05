@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(./fonts/Lato-Black.ttf);
+}
+body {
+    padding: 0 0;
+    margin: 0 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/marble-2398956_1280.jpg);
+    z-index: 0;
+
+}
+.centerChunk{
+    display: grid;
+    grid-template-columns: .25fr .25fr 1.5fr 2fr .25fr;
+    grid-template-rows: .25fr .25fr 2fr 2fr 2fr .25fr .25fr;
+    background-color: rgba(96, 96, 96, .9);
+    height: 100%;
+    width: 100%;
+}
+
+.leftSideBar{
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 3 / 6;
+    background-color: beige;
+    border: 2px solid black;
+}
+.socialLinks{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    padding-bottom: 5%;
+}
+.pictureAboutMe{
+    grid-column: 3 / 4;
+    grid-row: 2 / 7;
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: .5rem;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: .25fr 3fr .25fr;
+    grid-template-rows: 5fr .5fr 1.5fr;
+    height: 100%;
+    width: 100%;
+}
+.portrait{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+    overflow: hidden;
+}
+.aboutMeTitle {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    border-bottom: .1rem solid black;
+}
+.aboutMeParagraph {
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+p {
+    text-align: center;
+}
+img {
+    height: 100%;
+    width: auto;
+}
+.servicesResume{
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    background-color: rgb(128, 148, 58);
+    border: 2px solid black;
+}
+.portfolioExamples{
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    background-color: beige;
+    border: 2px solid black;
+}
+.contactInfo{
+    grid-column: 4 / 5;
+    grid-row: 5 / 6;
+    background-color: beige;
+    border: 2px solid black;
+
+}
+
+.svgList {
+    padding: 10% 5% 0 5%;
+    height: auto;
+    width: 100%;
+    stroke: whitesmoke;
+    }
+ul {
+    list-style: none;
+}
+h3 {
+    padding-left: 10%;
+    text-decoration: underline;
+}
+services{
+    padding-top: 10%;}
+h1{
+    font-family: 'Lato-bold';
+}
