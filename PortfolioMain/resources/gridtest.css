@@ -116,14 +116,6 @@ git status
 h1{
     font-family: 'Lato-bold';
 }
-/* Large devices (desktops, 992px and up) */
-.centerChunk {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1rem;
-    width: 960px;
-    margin: 0 auto;
-  }
   
   /* Medium devices (tablets, 768px and up) */
   @media only screen and (max-width: 991px) {
