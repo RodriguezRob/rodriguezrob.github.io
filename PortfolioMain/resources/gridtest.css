@@ -129,17 +129,8 @@ h1{
     }
   }
   
-  /* Small devices (landscape phones, 576px and up) */
+  /* Extra small devices (portrait phones, 767px and below) */
   @media only screen and (max-width: 767px) {
-    .centerChunk {
-      display: grid;
-      width: 480px;
-      margin: 0 auto;
-    }
-  }
-  
-  /* Extra small devices (portrait phones, 576px and below) */
-  @media only screen and (max-width: 575px) {
     .centerChunk {
       display: grid;
       grid-template-columns: .25fr 2fr .25fr;
