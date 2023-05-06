@@ -22,7 +22,6 @@ body {
     display: grid;
     grid-template-columns: .25fr .25fr 1.5fr 2fr .25fr;
     grid-template-rows: .25fr .25fr 2fr 2fr 2fr .25fr .25fr;
-    background-color: rgba(96, 96, 96, .9);
     height: 100%;
     width: 100%;
 }
@@ -58,6 +57,10 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2; 
     overflow: hidden;
+}
+#smallChungus{
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .aboutMeTitle {
     grid-column: 2 / 3;
@@ -121,7 +124,6 @@ h1{
   @media only screen and (max-width: 991px) {
     .centerChunk {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
       width: 736px;
       margin: 0 auto;
     }
@@ -131,7 +133,6 @@ h1{
   @media only screen and (max-width: 767px) {
     .centerChunk {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
       width: 480px;
       margin: 0 auto;
     }
@@ -141,8 +142,44 @@ h1{
   @media only screen and (max-width: 575px) {
     .centerChunk {
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: .25fr 1.5fr 2fr .25fr;
+      grid-template-rows: .25fr .25fr 2fr 2fr 2fr .25fr .25fr;
       width: 100%;
       margin: 0;
     }
+    .pictureAboutMe{
+        grid-column: 2 / 3;
+        grid-row: 2 / 7;
+        background-color: beige;
+        border: 2px solid black;
+        border-radius: .5rem;
+    }
+    .servicesResume{
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        background-color: rgb(128, 148, 58);
+        border: 2px solid black;
+    }
+    .portfolioExamples{
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        background-color: beige;
+        border: 2px solid black;
+    }
+    .contactInfo{
+        grid-column: 3 / 4;
+        grid-row: 5 / 6;
+        background-color: beige;
+        border: 2px solid black;
+    
+    }
+    .leftSideBar{
+        display: none;
+        grid-column: 2 / 3;
+        grid-row: 3 / 6;
+        background-color: beige;
+        border: 2px solid black;
+    }
+
+
   }
