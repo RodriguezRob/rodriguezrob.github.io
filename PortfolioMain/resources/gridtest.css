@@ -110,7 +110,7 @@ ul {
     list-style: none;
 }
 h3 {
-    padding-left: 10%;
+    text-align: center;
     text-decoration: underline;
 }
 services{
@@ -147,6 +147,18 @@ h1{
       height: auto;
       width: 100%;
       margin: 0;
+    }
+    body {
+        padding: 0 0;
+        margin: 0 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(./images/super-mario-pixels-retro-games-video-games-wallpaper-preview.jpg);
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .pictureAboutMe{
         grid-column: 2 / 3;
