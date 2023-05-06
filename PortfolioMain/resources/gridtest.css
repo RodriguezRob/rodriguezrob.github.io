@@ -142,32 +142,33 @@ h1{
   @media only screen and (max-width: 575px) {
     .centerChunk {
       display: grid;
-      grid-template-columns: .25fr 1.5fr 2fr .25fr;
-      grid-template-rows: .25fr .25fr 2fr 2fr 2fr .25fr .25fr;
+      grid-template-columns: .25fr 2fr .25fr;
+      grid-template-rows: .25fr 2fr .75fr .75fr .75fr .25fr;
+      height: auto;
       width: 100%;
       margin: 0;
     }
     .pictureAboutMe{
         grid-column: 2 / 3;
-        grid-row: 2 / 7;
+        grid-row: 2 / 3;
         background-color: beige;
         border: 2px solid black;
         border-radius: .5rem;
     }
     .servicesResume{
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 3 / 4;
         background-color: rgb(128, 148, 58);
         border: 2px solid black;
     }
     .portfolioExamples{
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 4 / 5;
         background-color: beige;
         border: 2px solid black;
     }
     .contactInfo{
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 5 / 6;
         background-color: beige;
         border: 2px solid black;
