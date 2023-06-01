@@ -14,8 +14,8 @@ body {
     margin: 0 0;
     height: 100vh;
     width: 100vw;
-    background-image: url(./images/super-mario-pixels-retro-games-video-games-wallpaper-preview.jpg);
-    z-index: 0;
+    background-color: #333333;
+    background-image: url(../resources/images/BackGrnd.jpg);
 
 }
 .centerChunk{
@@ -30,8 +30,8 @@ body {
     display: flex;
     grid-column: 2 / 3;
     grid-row: 3 / 6;
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #999999;
+    border: 2px solid #D35400;
 }
 .socialLinks{
     display: flex;
@@ -42,8 +42,8 @@ body {
 .pictureAboutMe{
     grid-column: 3 / 4;
     grid-row: 2 / 7;
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #666666;
+    border: 2px solid #D35400;
     border-radius: .5rem;
 }
 .grid2{
@@ -66,7 +66,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     text-align: center;
-    border-bottom: .1rem solid black;
+    border-bottom: .1rem solid #FF7034;
 }
 .aboutMeParagraph {
     text-align: center;
@@ -75,28 +75,30 @@ body {
 }
 p {
     text-align: center;
+    color: #F5F5F5;
 }
 img {
     height: 100%;
     width: auto;
+    padding-top:5%;
 }
 .servicesResume{
     grid-column: 4 / 5;
     grid-row: 3 / 4;
-    background-color: rgb(128, 148, 58);
-    border: 2px solid black;
+    background-color: #999999;
+    border: 2px solid #D35400;
 }
 .portfolioExamples{
     grid-column: 4 / 5;
     grid-row: 4 / 5;
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #999999;
+    border: 2px solid #D35400;
 }
 .contactInfo{
     grid-column: 4 / 5;
     grid-row: 5 / 6;
-    background-color: beige;
-    border: 2px solid black;
+    background-color: #999999;
+    border: 2px solid #D35400;
 
 }
 
@@ -112,14 +114,71 @@ ul {
 h3 {
     text-align: center;
     text-decoration: underline;
+    color: #F5F5F5;
+
 }
-services{
+services {
     padding-top: 10%;}
-git status
+
 h1{
     font-family: 'Lato-bold';
+    text-align: center;
+    color: #F5F5F5;
 }
-  
+
+/*Name Generator Styling*/
+#buttonGrid {
+    display: grid;
+    grid-template-columns: .25fr 2fr .25fr;
+    grid-template-rows: .25fr 2fr .25fr;
+    height: 100%;
+    width: 100%;
+}
+#mainButtonBody {
+    display: block;
+    height: 90%;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #666666;
+    border: .2rem solid #D35400;
+    border-radius: .5rem;
+}
+#centerChunkGrid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: .25fr 2fr .25fr;
+    grid-template-rows: 1fr 1fr 1fr .75fr;
+
+}
+#buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#generate {
+    border-radius: 2rem;
+    border: .2rem;
+    border-bottom: .2rem solid #D35400;
+    border-left: .2rem solid #D35400;
+    background: #1A1A1A;
+    height: 50%;
+    width: 40%;    
+}
+#buttonHeader {
+    grid-row: 0 / 1;
+    grid-column: 2 / 3;
+}
+
+#blurb {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+
   /* Medium devices (tablets, 768px and up) */
   @media only screen and (max-width: 991px) {
     .centerChunk {
@@ -144,7 +203,7 @@ h1{
         margin: 0 0;
         height: 100vh;
         width: 100vw;
-        background-image: url(./images/super-mario-pixels-retro-games-video-games-wallpaper-preview.jpg);
+        background-image: url(../resources/images/BackGrnd.jpg);
         z-index: 0;
         background-size: cover;
         background-position: center;
@@ -154,27 +213,30 @@ h1{
     .pictureAboutMe{
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        background-color: beige;
-        border: 2px solid black;
+        background-color: #999999;
+        border: 2px solid #D35400;
         border-radius: .5rem;
     }
     .servicesResume{
         grid-column: 2 / 3;
         grid-row: 3 / 4;
-        background-color: rgb(128, 148, 58);
-        border: 2px solid black;
+        background-color: #999999;
+        border: 2px solid #D35400;
+        border-radius: .5rem;
     }
     .portfolioExamples{
         grid-column: 2 / 3;
         grid-row: 4 / 5;
-        background-color: beige;
-        border: 2px solid black;
+        background-color: #999999;
+        border: 2px solid #D35400;
+        border-radius: .5rem;
     }
     .contactInfo{
         grid-column: 2 / 3;
         grid-row: 5 / 6;
-        background-color: beige;
-        border: 2px solid black;
+        background-color: #999999;
+        border: 2px solid #D35400;
+        border-radius: .5rem;
     
     }
     .leftSideBar{
@@ -187,5 +249,4 @@ h1{
 
 
   }
-  /*Styling for the Button*/
-  
+
