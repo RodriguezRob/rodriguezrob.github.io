@@ -246,6 +246,15 @@ h1{
         background-color: beige;
         border: 2px solid black;
     }
+    #generate {
+        border-radius: 2rem;
+        border: .2rem;
+        border-bottom: .2rem solid #D35400;
+        border-left: .2rem solid #D35400;
+        background: #1A1A1A;
+        height: 50%;
+        width: 70%;    
+    }
 
 
   }
