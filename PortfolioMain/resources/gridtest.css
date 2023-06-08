@@ -9,122 +9,138 @@
     font-family: 'Lato-Bold';
     src: url(./fonts/Lato-Black.ttf);
 }
+nav {
+    position: fixed;
+    top: 1.25rem;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    width: 60%;
+    height: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(42,43,56,.5);
+    border: 0.15rem solid #2a2b37;
+    backdrop-filter: blur(104px);
+    border-radius: 2rem;
+    z-index: 1;
+}
 body {
+    display: grid;
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: 90% 100% auto auto auto auto;
     padding: 0 0;
     margin: 0 0;
     height: 100vh;
     width: 100vw;
-    background-color: #333333;
-    background-image: url(../resources/images/BackGrnd.jpg);
-
+    background-color: white;
+    overflow-y: scroll;
 }
-.centerChunk{
+h2 {
+    font-family: 'Lato', Helvetica;
+}
+main{
+    background: rgb(252,252,252);
+    background: linear-gradient(132deg, rgba(252,252,252,1) 0%, rgba(223,32,56,1) 21%, rgba(32,223,199,1) 88%);
+    grid-row: 1 / 2;
+}
+.landing{
     display: grid;
-    grid-template-columns: .25fr .25fr 1.5fr 2fr .25fr;
-    grid-template-rows: .25fr .25fr 2fr 2fr 2fr .25fr .25fr;
-    height: 100%;
-    width: 100%;
+    grid-column: 1 / 6;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 9rem auto auto auto auto;
 }
-
-.leftSideBar{
+#webDevContainer{
     display: flex;
-    grid-column: 2 / 3;
-    grid-row: 3 / 6;
-    background-color: #999999;
-    border: 2px solid #D35400;
-}
-.socialLinks{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: end;
-    padding-bottom: 5%;
-}
-.pictureAboutMe{
-    grid-column: 3 / 4;
-    grid-row: 2 / 7;
-    background-color: #666666;
-    border: 2px solid #D35400;
-    border-radius: .5rem;
-}
-.grid2{
-    display: grid;
-    grid-template-columns: .25fr 3fr .25fr;
-    grid-template-rows: 5fr .5fr 1.5fr;
-    height: 100%;
-    width: 100%;
-}
-.portrait{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2; 
-    overflow: hidden;
-}
-#smallChungus{
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-.aboutMeTitle {
-    grid-column: 2 / 3;
     grid-row: 2 / 3;
-    text-align: center;
-    border-bottom: .1rem solid #FF7034;
+    grid-column: 3 / 5;
+    align-items: end;
 }
-.aboutMeParagraph {
-    text-align: center;
-    grid-column: 2 / 3;
+#webDevTitle {
+    font-size: 4rem;
+    margin-bottom: 0;
+    margin-left: .75rem;
+}
+#webDevPara {
     grid-row: 3 / 4;
+    grid-column: 3 / 5;
+    padding-left: 2.5rem;
+    margin-top: 0;
+    font-size: 1.2rem;
+
 }
-p {
-    text-align: center;
-    color: #F5F5F5;
-}
-img {
-    height: 100%;
-    width: auto;
-    padding-top:5%;
-}
-.servicesResume{
-    grid-column: 4 / 5;
-    grid-row: 3 / 4;
-    background-color: #999999;
-    border: 2px solid #D35400;
-}
-.portfolioExamples{
-    grid-column: 4 / 5;
+
+#blurbOne{
     grid-row: 4 / 5;
-    background-color: #999999;
-    border: 2px solid #D35400;
+    grid-column: 3 / 4;
 }
-.contactInfo{
+#blurbTwo{
+    grid-row: 4 / 5;
     grid-column: 4 / 5;
+}
+
+.allSections{
+    grid-column: 2 / 5;
+}
+#portrait {
+    display: grid;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    height: 75%;
+    width: auto;
+    margin: auto auto;
+    padding: 0 0 1.2rem 1.2rem;
+    border-left: solid .175rem black;
+    border-bottom: solid .175rem black;
+
+}
+#aboutMeContainer{
+    display: grid;
+    grid-template-columns: .3fr 2fr 1fr .5fr .3fr;
+    grid-template-rows: auto auto auto;
+    grid-row: 2 / 3;
+    margin-top: 3rem;
+}
+#aboutMe{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+#goalsContainer{
+    display: grid;
+    grid-template-columns: .3fr 2fr 1fr .5fr .3fr;
+    grid-template-rows: auto auto auto;
+    grid-row: 3 / 4;
+
+}
+#goalsTitle{
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+}
+#JSExampleContainer{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    background-color: #20DFC7;
+    grid-row: 4 / 5;
+}
+#JSExample{
+    grid-column: 2 / 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+#linksToProjects{
+    display: grid;
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
     grid-row: 5 / 6;
-    background-color: #999999;
-    border: 2px solid #D35400;
-
+    background-color: #20DFC7;
+}
+#contactMe{
+    background-color: #DF2038;
+    display: grid;
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-row: 6 / 7;
 }
 
-.svgList {
-    padding: 10% 5% 0 5%;
-    height: auto;
-    width: 100%;
-    stroke: whitesmoke;
-    }
-ul {
-    list-style: none;
-}
-h3 {
-    text-align: center;
-    text-decoration: underline;
-    color: #F5F5F5;
-
-}
-services {
-    padding-top: 10%;}
-
-h1{
-    font-family: 'Lato-bold';
-    text-align: center;
-    color: #F5F5F5;
-}
 
 /*Name Generator Styling*/
 #buttonGrid {
@@ -188,63 +204,10 @@ h1{
     }
   }
   
-  /* Extra small devices (portrait phones, 767px and below) */
-  @media only screen and (max-width: 767px) {
-    .centerChunk {
-      display: grid;
-      grid-template-columns: .25fr 2fr .25fr;
-      grid-template-rows: .25fr 2fr .75fr .75fr .75fr .25fr;
-      height: auto;
-      width: 100%;
-      margin: 0;
-    }
-    body {
-        padding: 0 0;
-        margin: 0 0;
-        height: 100vh;
-        width: 100vw;
-        background-image: url(../resources/images/BackGrnd.jpg);
-        z-index: 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .pictureAboutMe{
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-        background-color: #999999;
-        border: 2px solid #D35400;
-        border-radius: .5rem;
-    }
-    .servicesResume{
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-        background-color: #999999;
-        border: 2px solid #D35400;
-        border-radius: .5rem;
-    }
-    .portfolioExamples{
-        grid-column: 2 / 3;
-        grid-row: 4 / 5;
-        background-color: #999999;
-        border: 2px solid #D35400;
-        border-radius: .5rem;
-    }
-    .contactInfo{
-        grid-column: 2 / 3;
-        grid-row: 5 / 6;
-        background-color: #999999;
-        border: 2px solid #D35400;
-        border-radius: .5rem;
-    
-    }
-    .leftSideBar{
+  /* Extra small devices (portrait phones, 844px and below) */
+  @media only screen and (max-width: 844px) {
+    nav {
         display: none;
-        grid-column: 2 / 3;
-        grid-row: 3 / 6;
-        background-color: beige;
-        border: 2px solid black;
     }
     #generate {
         border-radius: 2rem;
@@ -255,6 +218,7 @@ h1{
         height: 50%;
         width: 70%;    
     }
+
 
 
   }
