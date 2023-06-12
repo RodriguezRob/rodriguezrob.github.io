@@ -98,8 +98,8 @@ main img {
     display: grid;
     grid-row: 2 / 4;
     grid-column: 2 / 3;
-    height: 75%;
-    width: auto;
+    height: auto;
+    width: 60%;
     margin: auto auto;
     padding: 0 0 1.2rem 1.2rem;
     border-left: solid .175rem black;
