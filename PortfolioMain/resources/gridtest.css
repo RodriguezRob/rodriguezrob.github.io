@@ -473,9 +473,55 @@ p a{
         height: 50%;
         width: 70%;    
     }
-
-
-
+/*Button MObile Styling*/
+    #mainButtonBody {
+        display: flex;
+        height:auto;
+        width: 80%;
+        justify-self: center;
+        align-items: end;
+        grid-column: 2 / 5;
+        grid-row: 1 / 2;
+        background-color: #F0610F;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+    #centerChunkGrid {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: .25fr 2fr .25fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #blurb {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+    #buttonContainer {
+        display: flex;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        height: 100%;
+        justify-content: center;
+        align-items: center; 
 
     }
+    #generate{
+        background: white;
+        height: 70%;
+        transition:none;
+    }
+    #generate:active{
+        background: white;
+        border: none;
+
+    }
+    #generate:hover{
+        background: white;
+
+    }
+    #buttonHeader{
+        font-size: 1.8rem;
+    }
+}
 
