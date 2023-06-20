@@ -280,15 +280,10 @@ p a{
     background: white;
     height: 100%;
     width: 60%;    
-    transition: background 1.5s ease-in-out;
-}
-#generate:hover{
-    background: gray;
 }
 #generate:active{
-    background: #0F9EF0;
-    border-top: .2rem solid white;
-    border-right: .2rem solid white;
+    border-top: .2rem solid black;
+    border-right: .2rem solid black;
     border-radius: 2rem;
 }
 #buttonHeader {
