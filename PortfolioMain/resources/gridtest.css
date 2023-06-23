@@ -91,7 +91,7 @@ h2 {
     font-weight: bold;
 }
 main{
-    background: rgb(91, 102, 71);
+    background: #5b6647;
     grid-row: 1 / 2;
     grid-column: 1 / 6;
     display: grid;
@@ -108,6 +108,7 @@ main{
     font-size: 5rem;
     margin-bottom: 0;
     font-weight: bolder;
+    margin-left: 1rem;
 }
 #webDevPara {
     grid-row: 3 / 4;
@@ -324,7 +325,7 @@ li{
     align-items: end;
     grid-column: 2 / 5;
     grid-row: 1 / 2;
-    background-color: #F0610F;
+    background-color: #5b6647;
     margin-top: 10rem;
 }
 #centerChunkGrid {
@@ -383,6 +384,14 @@ p a{
     grid-column: 2 / 3;
     padding-top: 1rem;
 }
+.generatorText{
+    font-family: 'Lato', Helvetica, sans-serif;
+    color:#f7f7ee;
+}
+#nameGeneration{
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
 
 
   
@@ -400,7 +409,6 @@ p a{
         display: flex;
         width: 100%;
         height: 9%;
-        background: rgba(0, 85, 134,.5);
         border: none;
         border-bottom: .1rem solid black;
         border-radius: 0rem;
@@ -462,7 +470,6 @@ p a{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
-        background: #0F9EF0;
     }
     #webDevContainer{
         display: flex;
@@ -502,12 +509,9 @@ p a{
         width: 60%;
         margin: 6rem auto 0 auto;
         padding: 0 0 1.2rem 1.2rem;
-        border-left: solid .175rem #F0610F;
-        border-bottom: solid .175rem #F0610F;
     }
     h2 {
         font-family: 'Lato', Helvetica;
-        color:#F0610F;
         font-size: 1.5rem;
         margin-bottom: 0;
         font-weight: bold;
@@ -584,9 +588,6 @@ p a{
     }
     #generate {
         border-radius: 2rem;
-        border: .2rem;
-        border-bottom: .2rem solid #D35400;
-        border-left: .2rem solid #D35400;
         background: #1A1A1A;
         height: 50%;
         width: 70%;    
@@ -603,7 +604,6 @@ p a{
         align-items: end;
         grid-column: 2 / 5;
         grid-row: 1 / 2;
-        background-color: #F0610F;
         margin-top: 20%;
         margin-bottom: 5%;
     }
@@ -643,5 +643,9 @@ p a{
     #buttonHeader{
         font-size: 1.8rem;
     }
+    #nameGeneration{
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1rem;
+}
 }
 
