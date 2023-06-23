@@ -440,8 +440,8 @@ p a{
         box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
         z-index: 1;
         margin: 0;
-        right: 5%;
-        top:20%;
+        right: 0%;
+        top: 100%;
       }
     .dropdown-content a {
         color: black;
