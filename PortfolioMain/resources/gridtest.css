@@ -196,19 +196,21 @@ main img {
     border: .175rem solid black;
     grid-template-columns: 1fr;
     grid-template-rows: 80% 20%;
+    background-image: url(./images/images.png);
+    background-size: 100% 80%;
     
 }
 #linkBanner{
     display: flex;
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255);
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     transition: background 2s, color 2s;
 }
 #linkBanner:hover{
-    background:rgba(0, 0, 128,.5);
+    background:#5b6647;
     color: #f7f7ee;
 }
 
@@ -229,10 +231,13 @@ main img {
     color: #5b6647;
     font-family: 'Lato', Helvetica, sans-serif;
     font-weight: bold;
+    justify-self: center;
     font-size: 2rem;
     margin: 0 0;
 }
 #linksOne{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     grid-column: 3 / 5;
     grid-row: 3 / 6;
     border-top: .2rem solid #1A1A1A;
@@ -242,6 +247,8 @@ main img {
 
 }
 #linksTwo{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
     grid-column: 6 / 8;
     grid-row: 3 / 6;
     border-top: .2rem solid #1A1A1A;
@@ -337,7 +344,7 @@ li{
 
 }
 #namePg2{
-    background: white;
+    background: #e3e3c4;
     display: flex;
     justify-content: center;
 }
@@ -458,7 +465,7 @@ p a{
     body{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto 35% auto auto;
+        grid-template-rows: auto auto auto 35% 60% auto;
         overflow-y: scroll;
     }
     .allSections{
@@ -532,8 +539,19 @@ p a{
         display: flex;
         padding: 1rem;
         grid-row: 4 / 5;
-        grid-column: 1 / 2;;
+        grid-column: 1 / 2;
 
+    }
+    #JSExampleLink{
+        font-size: 1.25rem;
+        justify-self: center;
+    }
+    #linkBanner{
+        display: grid;
+        background:#5b6647;
+        color: #f7f7ee;
+        padding: .35rem;
+        font-size: 1rem;
     }
     #linksContainer{
         display: grid;
@@ -578,8 +596,8 @@ p a{
         display: grid;
     }
     ul{
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
+        padding: 0 .3rem;
+        
     }
     #infoHeader {
         width: 100%;
