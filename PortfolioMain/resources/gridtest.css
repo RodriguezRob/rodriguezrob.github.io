@@ -106,6 +106,8 @@ main{
     margin-bottom: 0;
     font-weight: bolder;
     margin-left: 1rem;
+    animation-name: rightSlide;
+    animation-duration: 3s;
 }
 #webDevPara {
     grid-row: 3 / 4;
@@ -168,7 +170,7 @@ main img {
     grid-column: 3 / 6;
     align-self: center;
     justify-self: start;
-    width: 45%;
+    width: 35%;
     margin-left: 20%;
 }
 
@@ -536,6 +538,9 @@ p a{
         border: none;
         justify-self: center;
         align-self:center;
+        animation-name: translator;
+        animation-duration: 2s;
+
         
     }
     #blurbsOne{
@@ -615,7 +620,7 @@ p a{
         grid-template-rows: .5fr .5fr 1fr;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        padding: .5rem 0 .5rem 1rem;
+        padding: 1rem;
         border: none;
     }
     #linksOne p{
@@ -623,15 +628,16 @@ p a{
     }
     #projectList{
         justify-items: center;
-        list-style: circle;
+        list-style: none;
         padding: 0 3rem;
         font-size: 1rem;
+        border-bottom: .25rem solid #5b6647;
     }
     #linksTwo{
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         padding: 1rem;
-        border-top: .3rem solid black;
+        border-top: none;
         border-right: none;
         border-bottom: none;
     }
@@ -656,7 +662,7 @@ p a{
     #contactMe{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: .25fr 1.5fr;
+        grid-template-rows: .25fr auto auto;
     }
     ul{
         padding: 0 .3rem;
@@ -666,6 +672,7 @@ p a{
         width: 100%;
         margin: 0;
         grid-column: 1 / 3;
+        grid-row: 1 / 2;
         font-size: 2rem;
 
     }
@@ -675,8 +682,31 @@ p a{
         height: 50%;
         width: 70%;    
     }
-    #info2{
-        grid-column: 1 / 2;
+    #contactMe ul {
+        display: grid;
+        grid-column: 1 / 3;
+        margin: 0;
+        justify-content: center;
+
+    }
+
+    @keyframes translator {
+        from {
+            transform: translateX(-200%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+        
+    }
+    @keyframes rightSlide {
+        
+        from{
+            transform: translateX(300%);
+        }
+        to {
+            transform: translateX(0%);
+        }
     }
 /*Button MObile Styling*/
     #mainButtonBody {
